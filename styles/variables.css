@@ -9,7 +9,6 @@
   --header-title-size: clamp(14px, calc(10.831px + 0.845vw), 23px);
   --header-padding-vertical: clamp(122px, calc(119.183px + 0.751vw), 130px);
   --margin-header-top: 100px;
-  --margin-header-bottom: 98px;
   --article-text-size: 18px;
   --accent-color: #000;
   --light-color: #fff;
@@ -21,4 +20,5 @@
   --save-button-width: clamp(306px, 295.789px + 2.723vw, 335px);
   --dialog-width: clamp(341px, 336.775px + 1.127vw, 353px);
   --close-button-width: clamp(261px, 249.732px + 3.005vw, 293px);
+  --article-text-width: clamp(321px, 206.563px + 30.516vw, 646px);
 }

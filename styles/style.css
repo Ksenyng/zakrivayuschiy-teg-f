@@ -34,7 +34,7 @@
 
 .header {
   margin-block-start: var(--margin-header-top);
-  margin-block-end: var(--margin-header-bottom);
+  margin-block-end: 98px;
   font-family: var(--accent-font), sans-serif;
   text-transform: uppercase;
 }
@@ -123,6 +123,7 @@
   margin-right: 25px;
   margin-bottom: 25px;
   margin-left: 25px;
+  max-inline-size: var(--article-text-width);
 }
 
 .article__text {
@@ -171,7 +172,6 @@ button {
 .button__text {
   position: relative;
   z-index: 1;
-  padding-block-start: 1px;
   color: var(--light-color);
   font-family: var(--accent-font), sans-serif;
   font-size: 14px;
@@ -208,12 +208,14 @@ button {
 .save-button {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   align-items: center;
-  gap: 6px;
+  gap: 9px;
   margin-inline-start: auto;
   margin-inline-end: auto;
   margin-block-end: 100px;
-  padding: 14px 19px;
+  padding-block-start: 14px;
+  padding-block-end: 14px;
   font-size: 14px;
   background-color: var(--light-color);
   inline-size: var(--save-button-width);
@@ -287,6 +289,7 @@ dialog[open]::backdrop {
 .dialog-text .floppy {
   inline-size: 39px;
   block-size: 39px;
+  mix-blend-mode: difference;
 }
 
 .dialog-text h2 {
@@ -302,9 +305,21 @@ dialog[open]::backdrop {
   inline-size: var(--close-button-width);
 }
 
-
 @media (width <= 375px) {
- .article__title {
- max-inline-size: 351px;
+  .header {
+    margin-block-end: 100px;
   }
-} 
+  .article__title {
+    max-inline-size: 351px;
+  }
+  .save-button {
+    flex-direction: column;
+  }
+  .save-button .floppy {
+    inline-size: 28px;
+    block-size: 28px;
+  }
+  dialog {
+    padding-inline: 40px;
+  }
+}
