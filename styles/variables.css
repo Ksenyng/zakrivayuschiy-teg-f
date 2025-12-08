@@ -1,1 +1,29 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+--main-font: "Inter";
+--accent-font: "PressStart2P";
+--main-font-text-weight: 410;
+--main-font-title-weight: 715;
+--block-width: clamp(375px, 260.56px + 30.517vw, 700.01px);
+--logo-font-size: clamp(49px, calc(43.366px + 1.502vw), 65px);
+--header-title-size: clamp(14px, calc(10.831px + 0.845vw), 23px);
+--header-padding-vertical: clamp(122px, calc(119.183px + 0.751vw), 130px);
+--margin-header-top: 100px;
+--margin-header-bottom: 98px;
+--article-text-size: 18px;
+--accent-color: #000;
+--light-color: #fff;
+--border: 2px solid var(--accent-color);
+--contour-color: #000;
+--animation-fill-color: #FF0000;
+--picture-height: clamp(371px, 256.563px + 30.516vw, 696px);
+--text-stroke-color: #fff;
+--save-button-width: clamp(306px, 295.789px + 2.723vw, 335px);
+--dialog-width: clamp(341px, 336.775px + 1.127vw, 353px);
+--close-button-width: clamp(261px, 249.732px + 3.005vw, 293px);
+
+
+
+
+
+}
