@@ -10,8 +10,8 @@
 
 */
 
-.sparks {
-  opacity: 0;
+.like-icon {
+  transform-origin: center;
 }
 
 .contour {
@@ -26,8 +26,8 @@
   transition: fill linear 0.3s 0.03s;
 }
 
-.like-icon {
-  transform-origin: center;
+.sparks {
+  opacity: 0;
 }
 
 .like-icon:hover .core {
