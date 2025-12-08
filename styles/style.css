@@ -302,7 +302,9 @@ dialog[open]::backdrop {
   inline-size: var(--close-button-width);
 }
 
-/*
+
 @media (width <= 375px) {
-  
-} */
+ .article__title {
+ max-inline-size: 351px;
+  }
+} 
